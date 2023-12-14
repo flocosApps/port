@@ -1,11 +1,9 @@
 <?php
-$jsonFile = "data.json";
-
 if (isset($_GET['status'])) {
     $status = $_GET['status'];
     if ($status == 'read') {
-        $jsonContent = file_get_contents($jsonFile);
-        $data = json_decode($jsonContent, true);
+        //$jsonContent = file_get_contents($jsonFile);
+        //$data = json_decode($jsonContent, true);
     } else {
         if ($status == 1) {
             $data = array(
